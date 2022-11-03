@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Participation</title>
+    <style> 
+        .small {
+            max-width:100%
+        }
+        .large {
+            width: 100%
+        }
+        @media only screen and (max-width: 600px) {
+            .small {margin: 10px}
+            .large {display: none}
+        }
+        @media only screen and (min-width: 1000px) {
+            .small {display: none}
+            .large {margin: 10px}
+        }
+    </style>
+    
+</head>
+<body>
+    <p class="small">I'm small</p>
+    <p class="large">I'm large</p>
+</body>
+</html>
