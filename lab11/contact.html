@@ -18,6 +18,9 @@
                 top: 30px;
                 left: -999px; /* pushes it off screen */
              }
+             .skip:focus {
+            left: 10px;
+            }
         </style>
     <title>Mel's Contact</title>
     <body>
@@ -25,8 +28,8 @@
             <a href="index.html">Home |</a>
             <a href="tables.html"> Skills |</a>
             <a href="contact.html"> Contact</a>
+            <a href="#content" class="skip" tabindex="1">Skip to Content</a>
         </nav>
-    <a href="#content" class="skip" tabindex="1">Skip to Content</a>
     <h1>Contact</h1>
     <p>Mel Wilder</p>
         <div class="part1">
@@ -46,7 +49,7 @@
                     <label for="call">Call</label>
                     <input type="radio" id="call" name="textcall" value="call" checked><br>
                     <label>Do you want to recieve texts about promotions?</label>
-                    <input type="checkbox" id="contact" name="contact" value="yes"><br>
+                    <input type="checkbox" id="contact" name="contact" value="yes" alt="checkbox"><br>
                     <label for="state">What state?</label>
                     <select id="state" name="state">
                         <option value="AL">AL</option>
