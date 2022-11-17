@@ -1,9 +1,11 @@
 body {
     color: solid black;
     background-color: #ffffff;
+    padding: 30px;
+
 }
 
-nav a {color: #000000;
+nav a {color: #F76900;
 }
 
 nav a:hover {background-color: #C8C8A9;
@@ -13,14 +15,34 @@ p {
     color:solid black;
 }
 
+.para1, .para2 {
+    color: #F76900
+}
 nav {
+    text-align: center;
     border: 1px solid #000000;
-    padding: 10px;
-    margin: 10px;
-    margin-bottom: 30px
+    padding: 5px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 20%;
+}
+h1 {
+    text-align: center;
+    color: #F76900;
+}
+.otto1 {
+    float: left; 
+    margin: 20px;
+}
+.otto2 {
+    float: left;
+    margin: 20px;
+}
+.clear {
+    clear: both;
 }
 .skip {
-    background-color: #d59b2e;
+    background-color: #F76900;
     padding: 5px;
     border: 1px solid black;
     position: absolute;
