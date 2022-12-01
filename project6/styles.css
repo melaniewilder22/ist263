@@ -16,7 +16,7 @@ p {
 }
 
 .para1, .para2 {
-    color: #F76900
+    color: solid black;
 }
 nav {
     text-align: center;
@@ -42,7 +42,7 @@ h1 {
     clear: both;
 }
 .skip {
-    background-color: #F76900;
+    background-color: solid black;
     padding: 5px;
     border: 1px solid black;
     position: absolute;
