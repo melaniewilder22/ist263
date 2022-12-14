@@ -64,13 +64,18 @@ h1 {
     clear: both;
 }
 .skip {
-    background-color: solid black;
-    padding: 5px;
-    border: 1px solid black;
     position: absolute;
-    top: 30px;
-    display: none;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
 }
+.skip:focus {
+    position: static;
+    width: auto;
+    height: auto;
+  }
 .row {
     display: flex;
     padding: auto;
