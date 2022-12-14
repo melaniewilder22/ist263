@@ -4,31 +4,90 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Front End Web Development</title>
+    <title>Syracuse Football History</title>
     <link rel="stylesheet" href = 'styles.css'>
     <style>
     </style>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@300&display=swap" rel="stylesheet">
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <body>
-    <nav>
-        <a href="index.html">Home <span class="span">|</span></a>
-        <a href="tables.html"> History <span class="span">|</span></a>
-        <a href="contact.html"> Contact </a>
-    </nav>
+    <div class="nav">
+        <div class="skip"><a href="#content" tabindex="1">Skip to Content</a></div>
+        <div><a href="index.html">Home <span class="span"></span></a></div>
+        <div><a href="tables.html"> History <span class="span"></span></a></div>
+        <div><a href="contact.html"> My Experience </a></div>
+    </div>
     <main>
-    <p>I am an Information Technology and Policy Studies major at Syracuse University. I grew up in Charlotte, North Carolina which is far from SU, but my family always had the Syracuse games playing. So, as soon as I was accepted in Syracuse University, I knew I wanted to be part of the gameday team, so I tried out for the cheer team.</p>
-    <img src="../images/otto.png" class="otto" alt="Otto The Orange">
+        <h1>Syracuse University Football History</h1>
+        <p class="second">In general, Syracuse has a rich history with all-stars such as Jim Brown, Ernie Davis, and Floyd Little. Jim Brown played as a running back for SU. In his senior year in 1956, Brown set school records for highest season rush average (6.2) and most rushing touchdowns in a single game (6). He ran for 986 yards, being the third-most in the country despite Syracuse playing only eight games—and scored 14 touchdowns. Ernie Davis was the first black man to ever earn the Heisman Trophy. Davis also played as a running back for the Syracuse Orange. He ran for 823 rushing yards and scored 15 touchdowns while leading the Orangemen in receiving with 16 catches for 157 yards and breaking multiple records once held by Jim Brown. He led Syracuse University to its sole national title in 1959, scoring two touchdowns as a sophomore against Texas in the Cotton Bowl. He was the number 1 overall pick in th 1962 NFL Draft, but was not able to play pro football, as he was diagnosed with leukemia. He died on May 18th, 1963. Finally, Floyd Little is the last Syracuse player to have worn the sacred number 44. Little was an All-American, was in the College Football Hall of Fame and the Pro Football Hall of Fame. He was also a running back for the Syracuse Orange. He went on to play for the Broncos, being the sixth player selected overall in the 1967 NFL draft pick.</p>
+        <center><img src="../images/44play.jpg" style="width:40%" alt="The statues of Brown, Davis, and Little in front of the Ensley Athletic Center"></center>
+        <p class="second">Syracuse football was great in the 90's. When Paul Pasqualoni became coach, the team went on to have a hot streak. Donavan McNabb was the quarterback and Marvin Harrison was the star receiver. They both went on to do well in the NFL. Back then the Syracuse Orange were in the Big East conference, not the ACC. During this time, SU had 15 winning seasons in a row, ending in 2001. Biggest rivals then were Miami and Boston College. Now they are all in the ACC together and the rivalry doesn't feel the same.</p>
+        <p class="second">More recently, Syracuse's biggest rivals are Clemson, Notre Dame, and Duke. However, most of these rivals are one sided on SU's side. The last few years have been mediocre at best, and terrible at worst. Syracuse has only been to a bowl game a couple times in the last 10 years. I'm hopeful this season plays out well and they win 8 or 9 games, but that's a tall order.</p>
+        <h1>Syracuse University Traditions History</h1>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <center><img src="../images/S.png" style="width:35%" alt="Syracuse University's logo"></center>
+              <div class="text"><h1>The color Orange</h1><p>Syracuse's offical color became Orange in 1890. This made Syracuse the first university to adopt only one official color. Before the change to orange, the school colors were a light pink and pea green. Syracuse students wanted colors as bold as they were. Orange alone was not claimed by any other school, and thus, was Syracuse's for the taking. It was adopted unanimously by a student committee, faculty, the Alumni Association, and Trustees, and remains Syracuse University's official color to this day.</p></div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <center><img src="../images/syracuse-bigpng-44.webp" style="width:35%" alt="the number 44"></center>
+              <div class="text"><h1>The 44 legend</h1><p>The number 44 is one of the most famous numbers associated with a college football program. Since 1954, eleven players have worn the number and three earned All-American honors. The three that earned All-American honors includes Jim Brown, Ernie Davis, and Floyd Little -- all who rank among the finest running backs ever to play the college game. In recognition of the number's significance, the University resides within the 13244 zip code, and all University phone numbers start with "44."</p></div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <center><img src="../images/ottomascot.jpg" style="width:35%" alt="Syracuse University's Mascot: Otto the Orange"></center>
+              <div class="text"><h1>The Mascot</h1><p>Syracuse University's beloved mascot Otto the Orange is a fixture at the school's sporting events and in the community. Otto wasn't always Syracuse University's mascot, but the beloved orange has been a favorite for more than 40 years. Cheerful and big-hearted, Otto always spreads sunshine and Syracuse spirit. From the sidelines at Syracuse University games to community events, roaming around campus during exam time, and even on dance floors at alumni weddings. Otto was even named the "Best Mascot in the ACC" by ESPN in 2016!</p></div>
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+            
+            <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+            
+            
     </main>
 
     
-
-<footer>
-<hr> &copy; 2020 
-<div class="quote">"Grow where you are planted"</div>
-</footer>
 </body>
 </html>
