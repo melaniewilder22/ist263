@@ -36,6 +36,8 @@ div {
 p {
     color:solid black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    line-height: 50px;
     
 }
 .second {
@@ -51,6 +53,7 @@ h1 {
     color: #D44500;
     font-family: 'Playfair Display', serif;
     font-family: 'Roboto', sans-serif;
+    font-size: 60px;
 }
 .otto1 {
     float: left; 
