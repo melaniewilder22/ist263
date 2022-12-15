@@ -36,8 +36,8 @@ div {
 p {
     color:solid black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 25px;
-    line-height: 50px;
+    font-size: 20px;
+    line-height: 30px;
     
 }
 .second {
@@ -48,12 +48,20 @@ p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-h1 {
+h1, h2, h3 {
     text-align: center;
     color: #D44500;
     font-family: 'Playfair Display', serif;
     font-family: 'Roboto', sans-serif;
-    font-size: 60px;
+}
+h1 {
+    font-size: 40px;
+}
+h2 {
+    font-size: 30px;
+}
+h3 {
+    font-size: 25px;
 }
 .otto1 {
     float: left; 
@@ -91,10 +99,42 @@ h1 {
     text-align: center;
   }
   
-  .column {
-    flex: 33.33%;
-    padding: 5px;
+div.row img {
+    width: 100%;
+    height: auto;
+}
+* {
+    box-sizing: border-box;
   }
+.column {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+@media screen and (max-width: 800px) {
+    .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 .mySlides {display: none;}
 img {text-align: center;}
 
